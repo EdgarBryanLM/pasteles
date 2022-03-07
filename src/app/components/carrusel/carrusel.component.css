@@ -1,0 +1,21 @@
+.slid{
+	height: 550px;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+
+
+}
+
+
+.clas1{
+margin-right: 15%;
+}
+
+.clas2{
+	margin-left: 15%;
+	}
+
+	.fondo{
+		background-image: url(../../../assets/img/fondo.jpg);
+	}
