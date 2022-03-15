@@ -13,6 +13,16 @@ import {ButtonModule} from 'primeng/button';
 import {ToastModule} from 'primeng/toast';
 import { CarruselPastelesComponent } from './components/carrusel-pasteles/carrusel-pasteles.component';
 import { OpinionesComponent } from './components/opiniones/opiniones.component';
+import { AvatarModule } from "primeng/avatar";
+import {RatingModule} from 'primeng/rating';
+import { FormsModule } from '@angular/forms';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import {InputTextModule} from 'primeng/inputtext';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import { AdminComponent } from './pages/admin/admin.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +31,10 @@ import { OpinionesComponent } from './components/opiniones/opiniones.component';
     CarruselComponent,
     ComprarComponent,
     CarruselPastelesComponent,
-    OpinionesComponent
+    OpinionesComponent,
+    ContactoComponent,
+    AdminComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +43,14 @@ import { OpinionesComponent } from './components/opiniones/opiniones.component';
     CarouselModule,
     ButtonModule,
     ToastModule,
+    AvatarModule,
+    RatingModule,
+    FormsModule,
+    InputTextModule,
+    InputTextareaModule,
+    
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

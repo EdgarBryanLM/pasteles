@@ -1,1 +1,205 @@
-<p>comprar works!</p>
+<app-menu></app-menu>
+<div class="alert alert-success" role="alert" *ngIf="alerta">
+    Pedido elaborado correctamente
+  </div>
+
+<div class="container-fluid">
+    <div class="row mx-4 ">
+        <div class="col-4">
+            <h4 class="h4 text-center">Sabores</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tres Leches
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Chocoloate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Fresa
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Canela
+                </label>
+              </div>
+        </div>
+
+
+
+
+
+        <div class="col-4">
+            <h4 class="h4 text-center">Ingredientes</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Fresas
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Extra chocolate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Crema de dulce
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Chispitas
+                </label>
+              </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="col-4">
+            <h4 class="h4 text-center">Color del chantillin</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                Rosa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Azul
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Verde
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Rojo
+                </label>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid mt-5">
+    <div class="row mx-4 ">
+        <div class="col-4">
+    
+            <span class="p-float-label tma mx-4 mt-4">
+                <input id="float-input " class="tma" type="text" pInputText > 
+                <label for="float-input">Nombre del festejado</label>
+            </span>
+    
+          
+        </div>
+
+
+
+
+
+        <div class="col-4">
+            <span class="p-float-label tma mx-4 mt-4">
+                <input id="float-input " class="tma" type="text" pInputText > 
+                <label for="float-input">Años a festejar</label>
+            </span>
+    
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="col-4">
+            <span class="p-float-label tma mx-4 mt-4">
+                <input id="float-input " class="tma" type="text" pInputText > 
+                <label for="float-input">Tematica del festejo</label>
+            </span>
+    
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid mt-5">
+    <h4 class="text-center">Hacer pedido</h4>
+    <div class="row mx-4 ">
+        <div class="col-4">
+    
+            <span class="p-float-label tma mx-4 mt-4">
+                <input id="float-input " class="tma" type="text" pInputText > 
+                <label for="float-input">Nombre</label>
+            </span>
+    
+          
+        </div>
+
+
+
+
+
+        <div class="col-4">
+            <span class="p-float-label tma mx-4 mt-4">
+                <input id="float-input " class="tma" type="text" pInputText > 
+                <label for="float-input">Telefono</label>
+            </span>
+    
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="col-4">
+            <span class="p-float-label tma mx-4 mt-4">
+                <input id="float-input " class="tma" type="text" pInputText > 
+                <label for="float-input">Correo Electrónico</label>
+            </span>
+    
+        </div>
+    </div>
+</div>
+
+
+<button class="btn btn-lg btn-primary mx-5 mt-5" (click)="onClick()">Hacer pedido</button>
+
+
+
+<app-footer class="mt-4"></app-footer>

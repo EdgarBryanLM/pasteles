@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-comprar',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComprarComponent implements OnInit {
 
-  constructor() { }
 
+  alerta:boolean=false;
+  constructor(private primengConfig: PrimeNGConfig,private router:Router) { }
+  
   ngOnInit(): void {
+    this.primengConfig.ripple = true;
+
   }
 
+
+  onClick(){
+    this.alerta=true;
+    setTimeout(() =>{
+
+      this.router.navigateByUrl('/pasteles');
+    } ,5000);
+    
+  }
 }
